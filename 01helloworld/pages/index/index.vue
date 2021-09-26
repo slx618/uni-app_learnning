@@ -7,6 +7,7 @@
 		<button type="default">{{btnName}}</button>
 		<view>
 			<text>{{content}}</text>
+			<button type="default">xxx</button>
 		</view>
 	</view>
 </template>
