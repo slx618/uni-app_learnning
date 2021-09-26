@@ -5,12 +5,12 @@
         </view>
         <text>轮播图</text>
         <swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
-            <swiper-item  v-for="img in imgList">
-                <view class="swiper-item">
-                    <text>{{img.txt}}</text>
-                </view>
+            <swiper-item v-for="img in imgList">
+                <navigator open-type="navigate" :url='"/pages/detail/detail?id="+img.id'>
+                    <view class="swiper-item">{{"img.txt: "+ img.txt + ' '+ 'img.id: '+ img.id}}</view>
+                </navigator>
             </swiper-item>
-         
+          
         </swiper>
 	</view>
     
