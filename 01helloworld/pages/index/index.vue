@@ -6,7 +6,7 @@
 		<uni-link :href="href" :text="href"></uni-link>
 		<button type="default">{{btnName}}</button>
 		<view>
-			<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
+			<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="2000">
 				<swiper-item>
 					<view class="swiper-item">
 						 内容 1
@@ -17,6 +17,11 @@
 						内容 2
 					</view>
 				</swiper-item>
+                <swiper-item>
+                	<view class="swiper-item">
+                		内容 3
+                	</view>
+                </swiper-item>
 			</swiper>
 		</view>
 	</view>

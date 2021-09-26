@@ -18,7 +18,7 @@
 	.page {
 		width: 100%;
 		height: 100%;
-		background-color: #F7F7F7;
+		background-color: #FFFFFF;
 		
 	}
 </style>
