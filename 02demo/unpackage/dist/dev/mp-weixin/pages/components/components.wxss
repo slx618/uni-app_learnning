@@ -1,0 +1,9 @@
+
+.mytitle{
+	width: 100%;
+	text-align: center;
+}
+.hover-title{
+	font-size: 60px;
+}
+

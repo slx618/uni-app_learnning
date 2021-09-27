@@ -1,0 +1,1 @@
+<view><input type="text" value="{{text}}" data-event-opts="{{[['input',[['__set_model',['','text','$event',[]]]]]]}}" bindinput="__e"/><button type="default" data-event-opts="{{[['tap',[['click',['$event']]]]]}}" bindtap="__e">提交</button><view><block wx:for="{{list}}" wx:for-item="v" wx:for-index="__i0__"><view>{{''+v+''}}</view></block></view></view>

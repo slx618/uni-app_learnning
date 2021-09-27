@@ -1,0 +1,1 @@
+<view><block wx:for="{{10}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view>{{''+index+" hello world "+item+''}}</view></block><block wx:for="{{list}}" wx:for-item="item" wx:for-index="k"><view>{{''+k+" hello world! "+item+''}}</view></block></view>

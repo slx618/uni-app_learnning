@@ -1,0 +1,1 @@
+<view><view class="mytitle" hover-stay-time="1000" hover-start-time="300" hover-class="hover-title">hello world!</view></view>

@@ -1,0 +1,1 @@
+<view><child vue-id="6a4bf740-1" text="{{text}}" data-event-opts="{{[['^change',[['change']]]]}}" bind:change="__e" bind:__l="__l"></child><chi-ld vue-id="6a4bf740-2" text="{{text}}" data-event-opts="{{[['^change',[['change']]]]}}" bind:change="__e" bind:__l="__l"></chi-ld>{{''+childTitle+''}}</view>

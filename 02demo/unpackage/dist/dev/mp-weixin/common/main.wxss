@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*每个页面公共css */
+.title {
+	background-color: #333333;
+	font-size: 30px;
+}
+

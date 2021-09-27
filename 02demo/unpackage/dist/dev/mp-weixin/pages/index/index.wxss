@@ -1,0 +1,9 @@
+
+.title{
+	background-color: #808080;
+	font-size: 20px;
+}
+.bs {
+	background-color: #007AFF;
+}
+
