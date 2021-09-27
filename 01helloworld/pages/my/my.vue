@@ -37,9 +37,9 @@
             //     data:{
             //         qq:"x"
             //     },
-            //     success: res => {
-            //         console.log(res)
-            //         this.imgList = res.data.data
+            //     success: rst => {
+            //         console.log(rst)
+            //         this.imgList = rst.data.data
             //     }
             // })
         },

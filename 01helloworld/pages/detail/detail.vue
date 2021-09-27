@@ -1,6 +1,8 @@
 <template>
-    <view>
-       {{detail.id}}
+    <view class="page">
+	   <view class="player">
+		   <video :poster="detail.poster" :src="detail.vUrl" controls="true"></video>
+	   </view>
     </view>
 </template>
 
@@ -9,7 +11,10 @@
         data() {
             return {
                 detail: {
-                   id: null
+                   id: null,
+				   vUrl: "",
+				   poster: ""
+				   
                 }
             }
         },
@@ -18,15 +23,15 @@
             console.log("loding")
             console.log(id)
             this.detail.id = id
-            // uni.request({
-            //     url: "" + id,
-            //     method: "POST",
-            //     header:{},
-            //     data: {},
-            //     success: res => {
-                    
-            //     }
-            // })
+      //       uni.request({
+      //           url: "" + id,
+      //           method: "POST",
+      //           header:{},
+      //           data: {},
+      //           success: rst => {
+						// this.detail = rst.data.data
+      //           }
+      //       })
         },
         methods: {
             
