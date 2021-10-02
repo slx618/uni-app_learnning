@@ -1,29 +1,22 @@
 <template>
 	<view class="container">
 		
-		<view class="intro">本项目已包含uni ui组件，无需import和注册，可直接使用。在代码区键入字母u，即可通过代码助手列出所有可用组件。光标置于组件名称处按F1，即可查看组件文档。</view>
-		<text class="intro">详见：</text>
-		<uni-link :href="href" :text="href"></uni-link>
-		<button type="default">{{btnName}}</button>
+	
 		<view>
 			<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="2000">
-				<swiper-item>
+				<swiper-item v-for="img in imgList" :key="img.id">
 					<view class="swiper-item">
-						 内容 1
+                        <navigator :url='"/pages/detail/detail?id=" + img.id' >
+                            {{img.content}}
+                            
+                        </navigator>
 					</view>
-				</swiper-item>
-				<swiper-item>
-					<view class="swiper-item">
-						内容 2
-					</view>
-				</swiper-item>
-                <swiper-item>
-                	<view class="swiper-item">
-                		内容 3
-                	</view>
-                </swiper-item>
+				</swiper-item>			
 			</swiper>
 		</view>
+        <view class="intro">本项目已包含uni ui组件，无需import和注册，可直接使用。在代码区键入字母u，即可通过代码助手列出所有可用组件。光标置于组件名称处按F1，即可查看组件文档。</view>
+        <text class="intro">详见：</text>
+        <button type="default">{{btnName}}</button>
 	</view>
 </template>
 
@@ -34,6 +27,7 @@
 				href: 'https://uniapp.dcloud.io/component/README?id=uniui',
 				btnName: 'btn',
 				content: '我是内容',
+                imgList: [{'content':'内容1', 'id':1}, {'content':'内容2', 'id':2}, {'content':'内容3', 'id':3}]
 			}
 		},
 		methods: {

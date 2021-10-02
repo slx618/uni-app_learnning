@@ -20,7 +20,7 @@
         },
         onLoad(params) {
             var id = params.id
-            console.log("loding")
+            console.log("detail + params.id")
             console.log(id)
             this.detail.id = id
       //       uni.request({

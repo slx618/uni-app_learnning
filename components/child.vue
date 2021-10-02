@@ -13,7 +13,7 @@
 	export default {
 		props:{
 			// text:Number
-			text: [Number],
+			text: [Number,String],
 			default: "wewew"
 		},
 		data() {
