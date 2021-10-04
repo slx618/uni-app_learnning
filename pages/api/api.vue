@@ -16,6 +16,9 @@
                 var t = setTimeout(() => {
                     console.log('log:'+ this.text)
                 }, 2000)
+                var it = setInterval(() => {
+                    console.log('setInterval:' + this.text)
+                }, 3000)
             }
         }
     }
