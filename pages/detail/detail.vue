@@ -8,10 +8,15 @@
 
 <script>
     export default {
+        props:{
+        	// text:Number
+        	id: [Number,String],
+        	default: "wewew"
+        },
         data() {
+           
             return {
                 detail: {
-                   id: null,
 				   vUrl: "",
 				   poster: ""
 				   

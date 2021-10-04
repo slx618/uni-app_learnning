@@ -6,9 +6,8 @@
 			<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="2000">
 				<swiper-item v-for="img in imgList" :key="img.id">
 					<view class="swiper-item">
-                        <navigator :url='"/pages/detail/detail?id=" + img.id' >
+                        <navigator :url='"/pages/detail/detail?id=" + img.id' open-type="navigate">
                             {{img.content}}
-                            
                         </navigator>
 					</view>
 				</swiper-item>			

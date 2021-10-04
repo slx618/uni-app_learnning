@@ -62,11 +62,11 @@
                     <radio value="r1" @click="radioClick" checked="true" />选中
                 </label>
                 <label class="radio">
-                    <radio value="r2"  @click="radioClick"  />未选中
+                    <radio value="r2" @click="radioClick" />未选中
                 </label>
             </view>
         </view>
-      
+
     </view>
 </template>
 
@@ -93,8 +93,13 @@
             }
         },
         methods: {
-            radioClick (){
-                console.log(this.$attrs)
+            radioChange: function(evt) {
+                for (let i = 0; i < this.items.length; i++) {
+                    if (this.items[i].value === evt.detail.value) {
+                        this.current = i;
+                        break;
+                    }
+                }
             },
             bindPickerChange: function(e) {
                 console.log('picker发送选择改变，携带值为', e.target.value)
